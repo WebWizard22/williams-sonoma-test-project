@@ -9,7 +9,6 @@ const useStyles = makeStyles((theme) => ({
   modal: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
   },
   root: {
     paddingTop: "5rem",

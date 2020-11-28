@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Grid, Modal, Backdrop, Fade, Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import data from "./data/index.json";
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const classes = useStyles();
-  const [products, setProducts] = useState(data.groups);
+  const [products] = useState(data.groups);
   const [open, setOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
 

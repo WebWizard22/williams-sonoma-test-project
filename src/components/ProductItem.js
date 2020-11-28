@@ -11,7 +11,7 @@ const useStyle = makeStyles((theme) => ({
 
 const ProductItem = ({ product, selectProduct }) => {
   const classes = useStyle();
-  const { hero, name, price = { selling: 0 } } = product;
+  const { hero = {}, name, price = { selling: 0 } } = product;
 
   return (
     <Card>
